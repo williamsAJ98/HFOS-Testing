@@ -1,0 +1,6 @@
+03
+Accepts a negative integer and outputs the birth timestamp from the time epoch
+agepicker
+agepicker.calculate_birth_timestamp
+-5
+1392572919

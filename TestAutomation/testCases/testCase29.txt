@@ -1,0 +1,7 @@
+29
+Accepts set of characters and a character, output the index of the character
+calculate
+calculate.findchar
+"a(bcd)abcd", 'c'
+8
+

@@ -1,0 +1,7 @@
+12
+Accepts a string characters and an empty character, output the index of the character in the string
+calculate
+calculate.findchar
+"abc", ''
+-1
+

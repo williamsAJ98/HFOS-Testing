@@ -1,0 +1,7 @@
+21
+Accepts a postive integer and outputs the factorial of that number
+functions
+functions.factorial
+3
+6
+

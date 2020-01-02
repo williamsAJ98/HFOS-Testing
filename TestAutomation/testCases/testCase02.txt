@@ -1,0 +1,6 @@
+02
+Accepts a zero and outputs the birth timestamp using the time epoch
+agepicker
+agepicker.calculate_birth_timestamp
+0
+1234892919

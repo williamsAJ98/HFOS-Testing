@@ -1,0 +1,6 @@
+01
+Accepts an integer and outputs the birth timestamp in seconds from the epoch
+agepicker
+agepicker.calculate_birth_timestamp
+5
+1077212919

@@ -1,0 +1,6 @@
+25
+Accepts a zero and outputs the factorial of that number
+functions
+functions.factorial
+0
+1

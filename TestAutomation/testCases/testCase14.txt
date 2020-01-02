@@ -1,0 +1,6 @@
+14
+Accepts string of characters and a character, output the index of the character in the string
+calculate
+calculate.findchar
+"(hello)", 'a'
+-1

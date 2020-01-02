@@ -1,0 +1,6 @@
+04
+Accepts a float and outputs the birth timestamp from the epoch
+agepicker
+agepicker.calculate_birth_timestamp
+5.5
+1061444919

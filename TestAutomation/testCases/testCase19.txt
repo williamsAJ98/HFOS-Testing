@@ -1,0 +1,6 @@
+19
+Accepts a large long integer and an integer and outputs the greatest common denominator of the numbers
+functions
+functions.gcd
+3000000000, 3
+3

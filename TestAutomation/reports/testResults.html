@@ -1,0 +1,120 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#results {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+
+#results td, #results th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#results tr:nth-child(even){background-color: #f2f2f2;}
+
+#results tr:hover {background-color: #ddd;}
+
+#results th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  <!--padding: 10px 16px;-->
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  <!--padding: 16px;-->
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+</style>
+</head>
+<body>
+<div class="top-container">
+Sugar Desktop App<br>
+Wed Nov 20 17:40:19 EST 2019
+  <h1>Test Results</h1>
+</div>
+
+<div class="header" id="myHeader">
+<table id="results">
+<col width="100">
+  <col width="125">
+  <col width="300">
+  <col width="200">
+  <col width="200">
+  <col width="200">
+  <col width="75">
+  <tr>
+    <th>Test Case</th>
+    <th>Requirement</th>
+    <th>Method</th>
+    <th>Input</th>
+    <th>Output</th>
+    <th>Oracle</th>
+    <th>Result</th>
+  </tr>
+  </table>
+</div>
+
+<div class="content">
+  <table id="results">
+  <col width="100">
+  <col width="125">
+  <col width="300">
+  <col width="200">
+  <col width="200">
+  <col width="200">
+  <col width="75">
+
+
+<tr><td>01</td><td>Accepts an integer and outputs the birth timestamp in seconds from the epoch</td><td style="word-wrap: break-word">agepicker.calculate_birth_timestamp</td><td>5</td><td style="word-wrap: break-word">1077212919</td><td style="word-wrap: break-word">1077212919</td><td>Pass</td></td> <tr><td>02</td><td>Accepts a zero and outputs the birth timestamp using the time epoch</td><td style="word-wrap: break-word">agepicker.calculate_birth_timestamp</td><td>0</td><td style="word-wrap: break-word">1234892919</td><td style="word-wrap: break-word">1234892919</td><td>Pass</td></td> <tr><td>03</td><td>Accepts a negative integer and outputs the birth timestamp from the time epoch</td><td style="word-wrap: break-word">agepicker.calculate_birth_timestamp</td><td>-5</td><td style="word-wrap: break-word">1392572919</td><td style="word-wrap: break-word">1392572919</td><td>Pass</td></td> <tr><td>04</td><td>Accepts a float and outputs the birth timestamp from the epoch</td><td style="word-wrap: break-word">agepicker.calculate_birth_timestamp</td><td>5.5</td><td style="word-wrap: break-word">1061444919</td><td style="word-wrap: break-word">1061444919</td><td>Pass</td></td> <tr><td>05</td><td>Accepts a very large long integer and outputs the birth timestamp from the time epoch</td><td style="word-wrap: break-word">agepicker.calculate_birth_timestamp</td><td>3000000000</td><td style="word-wrap: break-word">-94607998765107088</td><td style="word-wrap: break-word">-94607998765107088</td><td>Pass</td></td> <tr><td>06</td><td>Accepts a negative integer as the birth time stamp and outputs the age</td><td style="word-wrap: break-word">agepicker.calculate_age</td><td>-1000000</td><td style="word-wrap: break-word">39</td><td style="word-wrap: break-word">39</td><td>Pass</td></td> <tr><td>07</td><td>Accepts a positive integer as the birth time stamp and outputs the age</td><td style="word-wrap: break-word">agepicker.calculate_age</td><td>1000000</td><td style="word-wrap: break-word">39</td><td style="word-wrap: break-word">39</td><td>Pass</td></td> <tr><td>08</td><td>Accepts a birth time stamp and outputs the age</td><td style="word-wrap: break-word">agepicker.calculate_age</td><td>0</td><td style="word-wrap: break-word">39</td><td style="word-wrap: break-word">39</td><td>Pass</td></td> <tr><td>09</td><td>Accepts a long integer as the birth time stamp and outputs the age</td><td style="word-wrap: break-word">agepicker.calculate_age</td><td>3000000000</td><td style="word-wrap: break-word">-55</td><td style="word-wrap: break-word">-55</td><td>Pass</td></td> <tr><td>10</td><td>Accepts a float as the birth time stamp and outputs the age</td><td style="word-wrap: break-word">agepicker.calculate_age</td><td>1.5</td><td style="word-wrap: break-word">39</td><td style="word-wrap: break-word">39</td><td>Pass</td></td> <tr><td>11</td><td>Accepts an empty string of characters and a character, output the index of the character in the string</td><td style="word-wrap: break-word">calculate.findchar</td><td>"", 'a'</td><td style="word-wrap: break-word">-1</td><td style="word-wrap: break-word">-1</td><td>Pass</td></td> <tr><td>12</td><td>Accepts a string characters and an empty character, output the index of the character in the string</td><td style="word-wrap: break-word">calculate.findchar</td><td>"abc", ''</td><td style="word-wrap: break-word">-1</td><td style="word-wrap: break-word">-1</td><td>Pass</td></td> <tr><td>13</td><td>Accepts a string of characters and a character, output the index of the character in the string</td><td style="word-wrap: break-word">calculate.findchar</td><td>"hello", 'a'</td><td style="word-wrap: break-word">-1</td><td style="word-wrap: break-word">-1</td><td>Pass</td></td> <tr><td>14</td><td>Accepts string of characters and a character, output the index of the character in the string</td><td style="word-wrap: break-word">calculate.findchar</td><td>"(hello)", 'a'</td><td style="word-wrap: break-word">-1</td><td style="word-wrap: break-word">-1</td><td>Pass</td></td> <tr><td>15</td><td>Accepts a string of characters with a non-alpha character and a character, output the index of the character in the string</td><td style="word-wrap: break-word">calculate.findchar</td><td>"he(llo", 'l'</td><td style="word-wrap: break-word">-1</td><td style="word-wrap: break-word">-1</td><td>Pass</td></td> <tr><td>16</td><td>Accepts 2 integers and outputs the greatest common denominator of the integers</td><td style="word-wrap: break-word">functions.gcd</td><td>5, 10</td><td style="word-wrap: break-word">5</td><td style="word-wrap: break-word">5</td><td>Pass</td></td> <tr><td>17</td><td>Accepts a positive and negative integer and outputs the greatest common denominator of the numbers</td><td style="word-wrap: break-word">functions.gcd</td><td>-3, 5</td><td style="word-wrap: break-word">1</td><td style="word-wrap: break-word">1</td><td>Pass</td></td> <tr><td>18</td><td>Accepts a zero and a postive non-zero integer and outputs the greatest common denominator of the numbers</td><td style="word-wrap: break-word">functions.gcd</td><td>0, 5</td><td style="word-wrap: break-word">5</td><td style="word-wrap: break-word">5</td><td>Pass</td></td> <tr><td>19</td><td>Accepts a large long integer and an integer and outputs the greatest common denominator of the numbers</td><td style="word-wrap: break-word">functions.gcd</td><td>3000000000, 3</td><td style="word-wrap: break-word">3</td><td style="word-wrap: break-word">3</td><td>Pass</td></td> <tr><td>20</td><td>Accepts 2 negative integers and outputs the greatest common denominator of the numbers</td><td style="word-wrap: break-word">functions.gcd</td><td>-1, -2</td><td style="word-wrap: break-word">-1</td><td style="word-wrap: break-word">-1</td><td>Pass</td></td> <tr><td>21</td><td>Accepts a postive integer and outputs the factorial of that number</td><td style="word-wrap: break-word">functions.factorial</td><td>3</td><td style="word-wrap: break-word">6</td><td style="word-wrap: break-word">6</td><td>Pass</td></td> <tr><td>22</td><td>Accepts an integer found using integer division and outputs the factorial of that number</td><td style="word-wrap: break-word">functions.factorial</td><td>100/2</td><td style="word-wrap: break-word">30414093201713378043612608166064768844377641568960512000000000000</td><td style="word-wrap: break-word">30414093201713378043612608166064768844377641568960512000000000000</td><td>Pass</td></td> <tr><td>23</td><td>Accepts a 1 and outputs the factorial of that number</td><td style="word-wrap: break-word">functions.factorial</td><td>1</td><td style="word-wrap: break-word">1</td><td style="word-wrap: break-word">1</td><td>Pass</td></td> <tr><td>24</td><td>Accepts a long integer and outputs the factorial of that number</td><td style="word-wrap: break-word">functions.factorial</td><td>100</td><td style="word-wrap: break-word">93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000</td><td style="word-wrap: break-word">93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000</td><td>Pass</td></td> <tr><td>25</td><td>Accepts a zero and outputs the factorial of that number</td><td style="word-wrap: break-word">functions.factorial</td><td>0</td><td style="word-wrap: break-word">1</td><td style="word-wrap: break-word">1</td><td>Pass</td></td> <tr><td>26</td><td>Accepts set of characters and a character, output the index of the character</td><td style="word-wrap: break-word">calculate.findchar</td><td>"abc", 'b'</td><td style="word-wrap: break-word">1</td><td style="word-wrap: break-word">1</td><td>Pass</td></td> <tr><td>27</td><td>Accepts set of characters and a character, output the index of the character</td><td style="word-wrap: break-word">calculate.findchar</td><td>"We love CS", ' '</td><td style="word-wrap: break-word">2</td><td style="word-wrap: break-word">2</td><td>Pass</td></td> <tr><td>28</td><td>Accepts set of characters and a character, output the index of the character</td><td style="word-wrap: break-word">calculate.findchar</td><td>"zwagon)", 'z'</td><td style="word-wrap: break-word">0</td><td style="word-wrap: break-word">0</td><td>Pass</td></td> <tr><td>29</td><td>Accepts set of characters and a character, output the index of the character</td><td style="word-wrap: break-word">calculate.findchar</td><td>"a(bcd)abcd", 'c'</td><td style="word-wrap: break-word">8</td><td style="word-wrap: break-word">8</td><td>Pass</td></td> <tr><td>30</td><td>Accepts set of characters and a character, output the index of the character</td><td style="word-wrap: break-word">calculate.findchar</td><td>"a(bcd(efg)", 'd'</td><td style="word-wrap: break-word">-1</td><td style="word-wrap: break-word">-1</td><td>Pass</td></td>
+
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
+
